@@ -2,14 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>goit-js-hw-11</title>
+    <title>goit-js-hw-12</title>
     
     <script type="module" crossorigin src="/goit-js-hw-12/commonHelpers.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-8c59ed88.js">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-6e0bf343.js">
     <link rel="stylesheet" href="/goit-js-hw-12/assets/vendor-1cd1f9d9.css">
-    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-d0ca2d06.css">
+    <link rel="stylesheet" href="/goit-js-hw-12/assets/index-9a741ce2.css">
   </head>
   <body>
     <div class="form-search-container">
@@ -20,13 +19,25 @@
           name="searchKeyword"
           placeholder="Search query"
         />
-        <button type="submit" class="form-search-btn">Search</button>
+        <button type="submit" class="form-search-btn js-btn-submit">
+          Search
+        </button>
       </form>
     </div>
 
     <ul class="gallery js-gallery"></ul>
 
-    <div class="loader is-hidden js-loader"></div>
+    <div class="actions">
+      <button type="button" class="btn-more is-hidden js-btn-more">
+        Load more
+      </button>
+
+      <div class="loader is-hidden js-loader"></div>
+
+      <div class="end-msg is-hidden js-end-msg">
+        We're sorry, but you've reached the end of search results.
+      </div>
+    </div>
 
     
   </body>
