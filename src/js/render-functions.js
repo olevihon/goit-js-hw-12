@@ -10,7 +10,7 @@ export const createGalleryItemMarkup = images => {
         comments,
         downloads,
       }) => `
-    <li class="gallery-item">
+    <li class="gallery-item js-gallery-item">
         <a class="gallery-link js-gallery-link" href="${largeImageURL}">
             <img class="gallery-img" src="${webformatURL}" alt="${tags}" >
         </a>

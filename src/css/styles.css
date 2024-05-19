@@ -70,7 +70,8 @@ body {
   border-color: #4e75ff;
 }
 
-.form-search-btn {
+.form-search-btn,
+.btn-more {
   display: inline-flex;
   cursor: pointer;
 
@@ -93,6 +94,35 @@ body {
   transition: background-color 0.3s linear, color 0.3s linear;
 }
 
-.search-btn:hover {
+.form-search-btn:hover,
+.btn-more:hover {
   background-color: #6c8cff;
+}
+
+.form-search-btn[disabled] {
+  cursor: default;
+  background-color: #cfcfcf;
+  color: #989898;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn-more.is-hidden {
+  display: none;
+}
+
+.end-msg {
+  font-family: 'Montserrat', sans-serif;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.end-msg.is-hidden {
+  display: none;
 }
