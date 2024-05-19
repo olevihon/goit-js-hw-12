@@ -79,6 +79,9 @@ const onSearch = async event => {
     // Show loader
     showEl(loaderEl);
 
+    // Set current page to for each new search
+    currentPage = 1;
+
     // Get gallery items
     const { hits, totalHits } = await fetchPhotos(searchQuery, currentPage);
 
