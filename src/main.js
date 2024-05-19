@@ -82,8 +82,8 @@ const onSearch = async event => {
     // Get gallery items
     const { hits, totalHits } = await fetchPhotos(searchQuery, currentPage);
 
-    // Handle not found query
-    if (totalHits === 0) {
+    // Handle not found query or hits array is empty
+    if (totalHits === 0 || hits.length === 0) {
       // Enable search btn
       unsetDisabled(submitBtnEl);
 
